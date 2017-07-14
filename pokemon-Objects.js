@@ -55,24 +55,38 @@ function printRoster(arr){
         console.log(arr[i]);
     }
 }
+printRoster(arr);
 function pokemonAttacked(arr){
     for (var i=0; i<arr.length; i++){
         arr[i].hp -= 10
     }
 }
-function subtractHp(){
-    var randomPokemon = arr[(Math.floor(Math.random()*arr.length))];
+function promptTheUser(){
     HpSubtracted = prompt("How much hp will you subtract?");
+    var randNum = Math.floor(Math.random()*arr.length)
+
+
+    var randomPokemon = arr[randNum];
     randomPokemon.hp -= HpSubtracted;
     console.log(randomPokemon.name + " lost " + HpSubtracted + " hp ");
+    if (randomPokemon.hp <= 0){
+        removePokemon(randNum) 
+    } 
+    else if ( randomPokemon.hp > 0){
+        console.log("Super effective, they are still alive");
+    }
+    
 }
-subtractHp();
-function removePokemon(){
-    for (var i=0; i<arr.length; i++){
-        var randomPokemon = arr[Math.floor(Math.random()*arr.length)];
-        arr[i] = arr[i] -= randomPokemon; 
+
+function removePokemon(randNum){
+        
+        var randomPokemon = arr[randNum];
+        arr.splice(randNum, 1);
         console.log(randomPokemon.name + " has retired from the team ");
     }
+while (arr.length > 0){
+    promptTheUser();
 }
-removePokemon()
-printRoster(arr);
+if (arr.length == 0){
+    console.log("Game Over")
+}
