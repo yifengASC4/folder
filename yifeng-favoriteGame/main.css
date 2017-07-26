@@ -1,12 +1,14 @@
 nav{
     background: rgba(0,0,0,.9);
-    border: grey 3px;
     background-image: url("https://vignette1.wikia.nocookie.net/leagueoflegends/images/1/12/League_of_Legends_Icon.png/revision/latest?cb=20150402234343");
     background-repeat: no-repeat;
-    background-size: 45px 45px;
+    background-size: 70px 70px;
+}
+.navbar{
+    border: groove rgba(0,0,0,.7);
 }
 li{
-    padding: 0px 10px 0px 10px;
+    padding: 10px 10px 0px 10px;
     color: orange;
     font-family: 'Domine', serif;
 
