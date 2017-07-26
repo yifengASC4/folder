@@ -1,0 +1,31 @@
+nav{
+    background: rgba(0,0,0,.9);
+    border: grey 3px;
+    background-image: url("https://vignette1.wikia.nocookie.net/leagueoflegends/images/1/12/League_of_Legends_Icon.png/revision/latest?cb=20150402234343");
+    background-repeat: no-repeat;
+    background-size: 45px 45px;
+}
+li{
+    padding: 0px 10px 0px 10px;
+    color: orange;
+    font-family: 'Domine', serif;
+
+}
+.list1{
+    padding: 10px 10px 0px 250px;
+}
+.list2{
+    padding: 10px 10px 0px 10px;
+}
+.list3{
+    padding: 10px 10px 5px 130px;
+}
+button{
+    width: 120px;
+    height: 30px;
+    border: ridge 5px skyblue;
+    text-align: center;  
+}
+img{
+    width:1350px;
+}

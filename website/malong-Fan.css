@@ -1,0 +1,34 @@
+body{
+    background: lightsteelBlue;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+.title{
+    border: ridge 15px steelblue;
+    margin-bottom: 3%;
+    font-size: 38px;
+
+}
+img{
+    border: groove 15px steelBlue;
+    width: 97.5%;
+    vertical-align: middle;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.class1{
+    border: ridge 15px steelBlue;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    padding: 5%;
+}
+p{
+    display: inLine-block;
+    vertical-align: middle;
+    color: teal;
+}
+h1{
+    color: darkSlategrey;
+    font-size: 44px;
+}
