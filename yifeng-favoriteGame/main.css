@@ -3,18 +3,20 @@ nav{
     background-image: url("https://vignette1.wikia.nocookie.net/leagueoflegends/images/1/12/League_of_Legends_Icon.png/revision/latest?cb=20150402234343");
     background-repeat: no-repeat;
     background-size: 70px 70px;
+    background-position: 5px 5px;
 }
 .navbar{
     border: groove rgba(0,0,0,.7);
 }
 li{
-    padding: 10px 10px 0px 10px;
+    padding: 20px 10px 0px 10px;
     color: orange;
     font-family: 'Domine', serif;
+    display: inline;
 
 }
 .list1{
-    padding: 10px 10px 0px 250px;
+    padding: 10px 10px 0px 200px;
 }
 .list2{
     padding: 10px 10px 0px 10px;
@@ -23,11 +25,109 @@ li{
     padding: 10px 10px 5px 130px;
 }
 button{
+    background-color: orange;
     width: 120px;
     height: 30px;
     border: ridge 5px skyblue;
-    text-align: center;  
+    text-align: center; 
+    font-family: 'Domine', serif; 
+
 }
 img{
     width:1350px;
+}
+body{
+    text-align: center;
+    color: orange;
+}
+@media (max-width: 400px){
+    ul.list1 li{
+        text-align: center;
+        display: block;
+    }
+    ul.list2 li{
+        text-align: center;
+    }
+    ul.list3 li{
+        text-align: center;
+    }
+}
+.champions{
+    background-color:rgba(0,0,0,.8);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 48px;
+}
+.member{
+    padding: 20px 0px 0px 0px;
+    font-size: 38px;
+}
+.list4{
+    float: left;
+    padding-left: 100px;
+    padding-right: 0;
+}
+.list5{
+    float: left;
+    padding-left: 200px;
+}
+.list6{
+    float: center;
+}
+.list8{
+    float: right;
+    padding-right: 200px;
+}
+.list7{
+    float: right;
+    padding-right: 100px;
+}
+.name{
+    padding: 10px 0px 0px 0px;
+    font-size: 38px;
+}
+.lista{
+    float: left;
+    padding-left: 120px;
+}
+.listb{
+    float: left;
+    padding-left: 200px;
+}
+.listc{
+    float: center;
+}
+.liste{
+    float: right;
+    padding-right: 220px;
+}
+.listd{
+    float: right;
+    padding-right: 120px;
+}
+.membersName img{
+    
+    width: 250px;
+    height: 300px;
+    margin: 10px;
+    border: ridge orange 5px;
+    border-radius: 50px;
+}
+.images{
+  background-color: black;
+}
+.hunipic{
+    float: left;
+}
+.peanutpic{
+    float: left;
+}
+/*.fakerpic{
+    float: left;
+}*/
+.wolfpic{
+    float: right;
+}
+.bangpic{
+    float: right;
 }
