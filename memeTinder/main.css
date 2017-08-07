@@ -1,0 +1,39 @@
+html{
+    background: url("https://i.ytimg.com/vi/zf5yyrK31FY/maxresdefault.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+}
+h1{
+    font-size:100px;
+    text-align: center;
+    color: white;
+    margin-top: -20px;
+}
+.likememe{
+    position: relative;
+    left: 300px;
+    margin-top: 50px;
+    background-color: green;
+    width: 150px;
+    height: 50px;
+}
+.dislikememe{
+    position: relative;
+    left: 740px;
+    margin-top: 50px;
+    background-color: red;
+    width: 150px;
+    height: 50px;
+}
+iframe{
+    background: url("http://i.imgflip.com/1bij.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: grey;
+    margin-left: 370px;
+    margin-top: 50px;
+    border: solid blue 7px;
+    width: 600px;
+    height: 400px;
+}
