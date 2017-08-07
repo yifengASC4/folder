@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <script src="https://www.gstatic.com/firebasejs/4.2.0/firebase.js"></script>
+        <script src= "https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+        <script>
+            // Initialize Firebase
+            var config = {
+                apiKey: "AIzaSyBUKlrRD78fYD82Z3uDT1UOiNBrzNoxtfE",
+                authDomain: "firemessage-2f95d.firebaseapp.com",
+                databaseURL: "https://firemessage-2f95d.firebaseio.com",
+                projectId: "firemessage-2f95d",
+                storageBucket: "",
+                messagingSenderId: "965913900413"
+            };
+            firebase.initializeApp(config);
+        </script>
+        <script src="script.js"></script>
+        <link rel="stylesheet" href="main.css">
+        <title>HIGH SCORE</title>
+    </head>
+    <body>
+        <div class="heading">ROCK-PAPER-SCISSOR</div>
+        <div class="score">
+        </div>
+        <div id="picBackground" class="pictures">
+            <img class="choices" src="https://www.copleyraff.com/wp-content/uploads/2017/02/rockpaperscissors2.jpg">
+        </div>
+        <div class = "rpc">
+            <button type="button" class="rock" onClick="myFunction()">ROCK</button>
+            <button type="button" class="paper" onClick="paperImg()">PAPER</button>
+            <button type="button" class="scissor" onClick="scissorImg()">SCISSOR</button>
+        </div>
+        <div class="reset">
+            <button type="button" class="resetBtn" onClick="window.location.reload();">RESET</button>
+    </body>
+</html>
