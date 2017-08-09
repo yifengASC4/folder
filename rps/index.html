@@ -18,6 +18,7 @@
             };
             firebase.initializeApp(config);
         </script>
+        <link href="https://fonts.googleapis.com/css?family=Audiowide" rel="stylesheet">
         <script src="script.js"></script>
         <link rel="stylesheet" href="main.css">
         <title>HIGH SCORE</title>
@@ -25,16 +26,24 @@
     <body>
         <div class="heading">ROCK-PAPER-SCISSOR</div>
         <div class="score">
+            <h2>Results</h2>
+            <div class="gameresults">
+                
+            </div>
         </div>
-        <div id="picBackground" class="pictures">
-            <img class="choices" src="https://www.copleyraff.com/wp-content/uploads/2017/02/rockpaperscissors2.jpg">
+        <div class="playerChoices">
+            <div id="picBackground" class="pictures">
+                <img class="choices" src="https://www.copleyraff.com/wp-content/uploads/2017/02/rockpaperscissors2.jpg" width="500" height="300">
+            </div>
+            <div id = "rpc">
+                <button type="button" id="rock" onClick="myFunction(); pickRock();">ROCK</button>
+                <button type="button" id="paper" onClick="paperImg(); pickPaper();">PAPER</button>
+                <button type="button" id="scissor" onClick="scissorImg(); pickScissor();">SCISSOR</button>
+                <br><button type="button" class="resetBtn" onClick="removeData();">RESET</button></br>
+            </div>
         </div>
-        <div class = "rpc">
-            <button type="button" class="rock" onClick="myFunction()">ROCK</button>
-            <button type="button" class="paper" onClick="paperImg()">PAPER</button>
-            <button type="button" class="scissor" onClick="scissorImg()">SCISSOR</button>
+        <div class="points">
+            <h1 class="winning">Wins</h1>
         </div>
-        <div class="reset">
-            <button type="button" class="resetBtn" onClick="window.location.reload();">RESET</button>
     </body>
 </html>

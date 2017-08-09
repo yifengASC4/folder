@@ -1,6 +1,6 @@
 function Ship(){
     this.pos = createVector(width/2, height/2);
-    this.r = 25;
+    this.r = 15;
     this.heading = 0;
     this.rotation = 0;
     this.vel = createVector(0,0);
@@ -23,13 +23,22 @@ function Ship(){
         force.mult(0.3);
         this.vel.add(force)
     }
+
+    this.hits = function(asteroid){
+        var d = dist(this.pos.x, this.pos.y, asteroid.pos.x, asteroid.pos.y);
+        if (d < this.r + asteroid.r){
+            return true;
+        }else{
+            return false;
+        }
+    }
     this.render = function(){
         push();
         translate(this.pos.x, this.pos.y);
         rotate(this.heading) + PI / 2;
-        noFill();
+        fill(0);
         stroke(255);
-        triangle(-this.r, this.r, this.r*2, this.r-25, -this.r, -this.r)
+        triangle(-this.r, this.r, this.r*2, this.r-15, -this.r, -this.r)
         pop();
     }
     this.edges = function(){

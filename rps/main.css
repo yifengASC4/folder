@@ -1,44 +1,87 @@
-html,body{
+body{
     margin: 0;
-    text-align: center;
+    background-color: steelblue;
+    font-family: 'Audiowide', cursive;
+    color: goldenrod
 }
 .heading{
     font-size: 40px;
+    text-align: center;
     margin: 20px 0px 20px 0px;
 }
+.winning{
+    margin-top: 0;
+    text-align: center;
+}
+h2{
+    line-height: 0;
+    text-align: center;
+}
+p{
+    font-size: 25px;
+    line-height: 0;
+    text-align: center;
+}
 .score{
-    position:relative;
-    height: 100px;
+    height: 700px;
     margin: 0 auto;
-    width: 600px;
-    border: 2px solid blue;
-    background-color: grey;
+    margin-left: 50px;
+    width: 700px;
+    border: 5px solid blue;
+    background-color: lightsteelblue;
+    border-radius: 10%;
+}
+.playerChoices{
+    border: 5px blue solid;
+    background-color: lightsteelblue;
+    border-radius: 6%;
+    margin: -710px 50px 20px 800px;
 }
 .pictures{
-    position:relative;
     height: 300px;
-    margin: 0 auto;
-    margin-top: 20px;
     width: 300px;
-    border: 2px solid blue;
-    background-color: grey;
+    border: 5px solid blue;
+    background-color: lightsteelblue;
+    border-radius: 25px;
+    margin-left: 90px;
+    margin-top: 10px;
+}
+.gameresults{
+    border: 5px solid blue;
+    background-color: lightsteelblue;
+    margin: 20px 50px 20px 50px;
+    height: 200px;
+    overflow-y: scroll; 
+    overflow-wrap: break-word;
 }
 .choices{
     width:300px;
     height:300px;
 }
-.rpc{
-    margin-top: 40px;
+.points{
+    width: 510px;
+    height: 200px;
+    border: 5px blue solid;
+    background-color: lightsteelblue;
+    border-radius: 6%;
+    margin-left: 800px;
 }
-.rock{
+#rpc{
+    margin-top: 20px;
+    margin-left: 45px;
+}
+#rock{
     width: 130px;
     height: 50px;
     background-color: blue;
     font-size: 25px;
     text-align: center;
-    border: groove 3px black;
+    border: groove 3px rgb(28,52,72);
 }
-.paper{
+img{
+    border-radius: 6%;
+}
+#paper{
     width: 130px;
     height: 50px;
     background-color: red;
@@ -46,7 +89,7 @@ html,body{
     text-align: center;
     border: groove 3px black;
 }
-.scissor{
+#scissor{
     width: 130px;
     height: 50px;
     background-color: yellow;
@@ -56,6 +99,8 @@ html,body{
 }
 .resetBtn{
     margin-top: 10px;
+    margin-left: 135px;
+    margin-bottom: 10px;
     width: 130px;
     height: 50px;
     background-color: black;
