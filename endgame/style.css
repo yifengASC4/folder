@@ -1,3 +1,23 @@
-h1{
-    color: white;
+html{
+    margin: 0;
+    background-color: steelblue;
 }
+h1{
+    color: steelblue;
+}
+.g-signin2{
+    line-height: 0;
+    display: inline;
+}
+.profileName{
+    line-height: 0;
+    position: 1300px 10px;
+}
+{
+    width: 1358px;
+    height: 30px;
+    background-color: black;
+    color: white;
+    border: none;
+}
+

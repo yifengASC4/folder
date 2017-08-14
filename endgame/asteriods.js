@@ -1,4 +1,4 @@
-function Asteroid(pos, r){
+function Asteroid(pos, r, word){
     if(pos){
         this.pos = pos.copy();
     }else{
@@ -9,10 +9,12 @@ function Asteroid(pos, r){
     }else{
         this.r = random(35, 50);
     }
+
+    this.word = randomWord();
       
     this.vel = p5.Vector.random2D();
   
-    this.total = floor(random(5, 15));
+    this.total = floor(random(5, 20));
     
     this.update = function(){
         this.pos.add(this.vel);
@@ -29,7 +31,9 @@ function Asteroid(pos, r){
             var x = this.r *cos(angle);
             var y = this.r *sin(angle);
             vertex(x, y);
+            
         }
+        text(this.word, x - this.r, y + this.r / 5);
         endShape(CLOSE);
         pop();
     }
@@ -53,3 +57,10 @@ function Asteroid(pos, r){
         }
     }
 }
+
+function randomWord(){
+    var words = ["venus", "mercury", "earth", "mars", "jupiter", "saturn", "uranus", "neptune"];
+    var random = words[Math.floor(Math.random()*8)];
+    return random;
+}
+        

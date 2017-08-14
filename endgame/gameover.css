@@ -1,0 +1,45 @@
+.button {
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: steelblue;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px skyblue;
+  position: relative;
+  top: 70px;
+  left: 590px;
+}
+
+.button:hover {
+    background-color: navy
+}
+
+.button:active {
+  background-color: steelblue;
+  box-shadow: 0 5px skyblue;
+  transform: translateY(4px);
+}
+a {
+    color: blue;
+}
+html{
+    background: url('http://ak4.picdn.net/shutterstock/videos/3931352/thumb/1.jpg');
+}
+h1{
+    color: lightgrey;
+    font-size: 100px;
+    font-family: 'Faster One', cursive;
+    text-align: center;
+}
+h3{
+    color: lightgrey;
+    font-size: 40px;
+    font-family: 'Faster One', cursive;
+    text-align: center;
+}
