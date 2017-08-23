@@ -20,4 +20,10 @@ h1{
     color: white;
     border: none;
 }
-
+#reset-bttn{
+    width: 1349px;
+    font-size: 20px;
+    color: steelblue;
+    background-color: black;
+    border: rgba(0,0,0, 0.5) 3px ridge;
+}
